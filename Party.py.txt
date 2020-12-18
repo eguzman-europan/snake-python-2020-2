@@ -1,0 +1,18 @@
+class party(): 
+    invitados = 0;
+    name_party = ""; 
+    
+    # Un constructor se ejecuta cuando se crea un objeto
+    def __init__ (self, name="NombrePorDefecto"):
+        self.name_party = name; 
+    
+    """
+    Está función cambia el nombre de la fiesta
+    """    
+    def update_name(self,name):
+        self.name_party = name
+        
+    def add_guest(self):
+        self.invitados = self.invitados + 1; 
+        
+        
